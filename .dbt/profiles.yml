@@ -1,1 +1,12 @@
-ECHO is on.
+my_dbt_project1:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: user
+      password: user
+      port: 5432
+      dbname: my_database
+      schema: public
+      
